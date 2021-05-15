@@ -1,5 +1,6 @@
 import ExampleIOUPaymentForm from "@reactioncommerce/components/ExampleIOUPaymentForm/v1";
 import StripePaymentInput from "@reactioncommerce/components/StripePaymentInput/v1";
+import CODPaymentForm from "../components/CODPaymentForm";
 
 const paymentMethods = [
   {
@@ -13,6 +14,12 @@ const paymentMethods = [
     InputComponent: ExampleIOUPaymentForm,
     name: "iou_example",
     shouldCollectBillingAddress: true
+  },
+  {
+    displayName: "COD",
+    InputComponent: CODPaymentForm,
+    name: "cod",
+    shouldCollectBillingAddress: false
   }
 ];
 
