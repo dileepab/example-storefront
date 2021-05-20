@@ -19,7 +19,7 @@ const paymentMethods = [
     displayName: "COD",
     InputComponent: CODPaymentForm,
     name: "cod",
-    shouldCollectBillingAddress: false
+    shouldCollectBillingAddress: true
   }
 ];
 
